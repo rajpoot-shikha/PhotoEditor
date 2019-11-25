@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activity.UploadImageActivity">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <com.fenchtose.nocropper.CropperView
+            android:id="@+id/edit_cropview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cropview_height"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            app:grid_opacity="0.8"
+            app:grid_thickness="@dimen/cardview_default_radius"
+            app:padding_color="@android:color/black"
+            app:grid_color="@color/colorAccent"
+            />
+
+            <TextView
+                android:layout_marginTop="@dimen/stretch_crop_textview_margin_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/crop_textview_margin_top"
+                android:textColor="@android:color/holo_blue_bright"
+                android:background="@color/colorFadedBlack"
+                android:textSize="@dimen/crop_textview_textsize"
+                android:text="@string/stretch_crop" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linear_layout"
+            android:layout_width="@dimen/edit_options_linear_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/rotate"
+                android:layout_marginLeft="@dimen/rotate_image_btn_margin_left"
+                android:layout_width="@dimen/edit_image_width"
+                android:layout_height="@dimen/edit_image_height"
+                android:background="@drawable/button_style"
+                android:src="@drawable/ic_autorenew_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Rotate"
+                    android:layout_marginLeft="@dimen/rotate_textview_margin_left"
+                    android:textSize="@dimen/edit_textview_textsize"
+                android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/crop"
+                android:background="@drawable/button_style"
+                android:layout_marginLeft="@dimen/crop_image_btn_margin_left"
+                android:layout_width="@dimen/edit_image_width"
+                android:layout_height="@dimen/edit_image_height"
+                android:src="@drawable/ic_crop_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/crop"
+                android:layout_marginLeft="@dimen/crop_textview_margin_left"
+                android:textSize="@dimen/edit_textview_textsize"
+                android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/gray_scale"
+                android:layout_marginLeft="@dimen/grayscale_image_btn_margin_left"
+                android:layout_width="@dimen/edit_image_width"
+                android:layout_height="@dimen/edit_image_height"
+                android:background="@drawable/button_style"
+                android:src="@drawable/ic_photo_filter_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/grayscale"
+                android:layout_marginLeft="@dimen/grayscale_textview_margin_left"
+                android:textSize="@dimen/edit_textview_textsize"
+                android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/save_btn"
+            android:layout_width="@dimen/save_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/save_btn_margin_top"
+            android:background="@color/colorPrimary"
+            android:text="@string/save_btn"
+            android:textSize="@dimen/save_btn_textsize" />
+
+    </LinearLayout>
+
+</RelativeLayout>

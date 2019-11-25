@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.activity.UploadImageActivity">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/frame_layout_height">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/upload_imageview_width"
+            android:layout_height="@dimen/upload_imageview_height"
+            android:layout_marginTop="@dimen/upload_imageview_margin_top"
+            android:layout_gravity="center"
+            android:background="@drawable/upload_image_border">
+        </ImageView>
+            <TextView
+                android:layout_marginTop="@dimen/edit_textview_margin_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edit_textview_margin_left"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="@dimen/floating_edit_textview_textsize"
+                android:background="@color/colorFadedBlack"
+                android:text="Tap on the image to edit" />
+        </FrameLayout>
+
+        <EditText
+            android:textCursorDrawable="@null"
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/image_name_edittext"
+            android:layout_width="@dimen/image_name_edittext_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/image_edittext_margin_top"
+            android:background="@color/colorAccent"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableStart="@drawable/ic_insert_photo_black_24dp"
+            android:hint="@string/image_name"
+            android:padding="@dimen/drawable_padding"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorFadedBlack" />
+
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/upload_btn_margin_top"
+            android:background="@color/colorPrimary"
+            android:text="@string/upload"
+            android:textSize="@dimen/upload_btn_text_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.activity.LoginActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_activity_top_linear_layout_height"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="PHOTO EDITOR"
+                android:textColor="@color/colorBlack"
+                android:textSize="26dp" />
+
+
+            <ImageView
+                android:layout_width="@dimen/main_activity_image_width"
+                android:layout_height="@dimen/main_activity_image_height"
+                android:src="@drawable/flower"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_activity_image_margin_top"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/welcome_screen_app_title"
+                android:text="WELCOME"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/app_title_textsize" />
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="@dimen/main_activity_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_activity_login_btn_margin_top"
+                android:background="@color/colorPrimary"
+                android:text="@string/login"
+                android:textSize="@dimen/main_activity_btn_textsize" />
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="@dimen/main_activity_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_activity_register_btn_margin_top"
+                android:background="@color/colorPrimary"
+                android:text="@string/register"
+                android:textSize="@dimen/main_activity_btn_textsize" />
+
+            <TextView
+                android:id="@+id/sign_up_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_activity_textview_margin_top"
+                android:text="@string/main_activity_text_message"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/welcome_screen_bottom_text" />
+
+            <com.google.android.gms.ads.AdView
+                android:layout_marginTop="@dimen/adview_margin_top"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

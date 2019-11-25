@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+
+    tools:context="com.example.activity.SplashScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name_splash"
+            android:textStyle="bold"
+            android:textSize="@dimen/splash_app_title"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/splash_title_margin_top"
+            />
+
+       <ImageView
+           android:layout_marginTop="@dimen/splash_image_margin_top"
+        android:layout_width="@dimen/splash_screen_image_width"
+        android:layout_height="@dimen/splash_screen_image_height"
+        android:src="@drawable/splash"
+        android:layout_marginLeft="@dimen/splash_image_margin_left"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/splash_progress_bar_margin_top"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/splash_textview_margin_horizontal"
+            android:layout_marginTop="@dimen/splash_textview_margin_top"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/splash_textview_size"
+            android:text="@string/company_name"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "336389175777",
+    "firebase_url": "https://photoeditor-26.firebaseio.com",
+    "project_id": "photoeditor-26",
+    "storage_bucket": "photoeditor-26.appspot.com"
+
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336389175777:android:655b38a2e2f9db52",
+        "android_client_info": {
+          "package_name": "com.example.photoeditor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336389175777-niil3g2mu5l5m3ua0v9ffjr5422vnrv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfMbFSwKOsKJRhm_lfhOo6iprd_kf55Fs"
+
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

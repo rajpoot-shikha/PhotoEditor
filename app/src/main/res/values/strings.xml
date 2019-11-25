@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">PhotoEditor</string>
+    <string name="progress_message">Loading Images....</string>
+    <string name="save">Save</string>
+    <string name="dont_save">Cancel</string>
+    <string name="save_alert_message">Wish to save the changes?</string>
+    <string name="save_alert_title">Save Image</string>
+    <string name="cropview_hint">Tap to crop the image</string>
+
+
+    <string name="choose_image_title">Select Action</string>
+    <string-array name="image_choosing_options">
+        <item><string name="choose_from_gallery">Select photo from gallery</string></item>
+        <item><string name="capture_from_camera">Capture photo from camera</string></item>
+    </string-array>
+
+
+        <string name="banner_ad_unit_id">ca-app-pub-8531433004275074/8552185748</string>
+    <string name="app_name_splash">PHOTO EDITOR</string>
+    <string name="company_name">GlobalLogic</string>
+    <string name="splash_authentication_success_message">Registration successful</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="main_activity_text_message">We hope you enjoy!</string>
+    <string name="login_success">Successful login</string>
+    <string name="incorrect_password">Password is incorrect</string>
+    <string name="empty_fields">Login credentials are empty</string>
+    <string name="user_not_registered">User is not registered</string>
+    <string name="successful_user_registration">User registered successfully</string>
+    <string name="user_already_exists">User with this username already registered</string>
+    <string name="empty_username_password_fields">All the fields are mandatory!</string>
+    <string name="invalid_pass">Enter a valid password</string>
+    <string name="password_confirm_password_mismatch">Password and confirm password does not matches</string>
+    <string name="invalid_username">Enter a valid username,it must be alphanumeric</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register_btn">REGISTER</string>
+    <string name="sign_in_suggestion">Already have a account? Sign in</string>
+    <string name="sign_up_suggestion">Dont have a account? Sign up</string>
+    <string name="save_btn">SAVE</string>
+    <string name="grayscale">GrayScale</string>
+    <string name="crop">Crop</string>
+    <string name="image_name">Enter name of your image</string>
+    <string name="upload">UPLOAD</string>
+    <string name="login_alert">Login Alert</string>
+    <string name="user_not_signed_in">You are not Signed In</string>
+    <string name="sign_in">Sign In</string>
+    <string name="cancel">Cancel</string>
+    <string name="successful_upload">Upload successful</string>
+    <string name="logout">Logout</string>
+    <string name="cancel_logout">Cancel</string>
+    <string name="logout_alert">Logout Alert</string>
+    <string name="logout_message">Wish to logout?</string>
+    <string name="uploading_progress_dialog">Uploading...</string>
+    <string name="welcome">WELCOME</string>
+    <string name="stretch_crop">Stretch the image to crop</string>
+    <string name="minimum_length_check">Username and Password must have atleast 6 characters</string>
+    <string name="maximum_length_check">Username and Password must not have more than 16 characters</string>
+
+
+</resources>
